@@ -33,6 +33,11 @@ const Contro = styled.div`
   width: 100%;
 
   align-items: center;
+   @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 const Head = styled.div`
   width: 100%;
