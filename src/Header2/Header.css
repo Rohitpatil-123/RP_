@@ -84,4 +84,7 @@ nav ul li a.active{
 nav .menu-btn{
     display: block;
 }
+ nav{
+    padding: 0px 30px 0px 30px;
+}
 }
