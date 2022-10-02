@@ -1,0 +1,87 @@
+nav{
+    height: 10vh;
+    background:#1b1b1b;
+    align-items: center;
+    display:flex;
+    position: relative;
+    justify-content: space-between;
+    z-index:10;
+    padding: 0px 50px 0px 100px;
+}
+nav ul{
+    display: flex;
+    list-style: none;   
+}
+nav ul li{
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+nav ul li a{
+    color :white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 8px 10px;
+    border-radius: 5px;
+    
+}
+nav ul li a:hover,
+nav ul li a.active{
+    border:1px solid#00b894;
+    transition: all 0.3s ease;
+    color: #00b894;
+}
+nav .logo{
+    color:antiquewhite;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: MT Extra;
+}
+nav .menu-btn{
+    color:aliceblue;
+    font-size: 22px;
+    cursor:pointer; 
+    display:none;
+}
+#click{
+    display: none;
+}
+@media (max-width:940px) {
+    #click:checked ~.menu-btn i:before{
+        content:"\f00d"
+    }
+    nav ul{
+        position: fixed;
+        top:10vh;
+        left:-100%;
+        background: #111;
+        height:60vh;
+        width:100%;
+        display:block;
+        text-align: center;
+        transition:all 0.3s ease;
+
+    }
+    #click:checked ~ ul{
+        left:0%;
+    }
+    nav ul li{
+        margin:40px 0;
+    }
+    nav ul li a{
+        font-size: 22px;
+        display: block;
+    }
+    nav ul li a:hover,
+nav ul li a.active{
+    background:none;
+    color: cyan;
+}
+nav .menu-btn{
+    display: block;
+}
+}
