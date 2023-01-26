@@ -69,11 +69,11 @@ h2{
   }
 @media (max-width: 768px) {
     .input-field{
-       width:280px;
+       width:260px;
     }
     .header-content{
         width: 90%;
-        height: 70%;
+        height: 80%;
     }
   }
   ::-webkit-scrollbar {
