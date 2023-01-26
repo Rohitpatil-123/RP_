@@ -1,0 +1,93 @@
+section{
+    width:100%;
+    height:85vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes pan {
+    100% {background-position: 15% 50%;}
+}
+body{
+    background-image: url('../images/poly.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: pan 6s infinite alternate linear;
+    }
+.header-content{
+    height:50%;
+    width:50%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #00b894;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .05);  
+    backdrop-filter: blur(5px);
+}
+h2{
+    color:rgb(116, 181, 237);
+}
+.bui{
+    background-color:transparent ;
+    color: aliceblue;
+    border-radius: 6px;
+    height: 40px;
+    border-color: rgb(35, 122, 237);
+    cursor: pointer;
+}
+
+
+.change_content:after {
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: #a4edde;
+  }
+  
+  @keyframes changetext {
+    0% {
+        content: "Web Developer";
+      }
+      20% {
+        content: "Programmer";
+      }
+      35% {
+        content: "Writer";
+      }
+      60% {
+        content: "Problem solver";
+      }
+      80% {
+        content: "Coder";
+      }
+      100% {
+        content: "Java Developer";
+      }
+  }
+@media (max-width: 768px) {
+    .input-field{
+       width:280px;
+    }
+    .header-content{
+        width: 90%;
+        height: 70%;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(88, 217, 237);
+    border-radius: 10px;
+  }

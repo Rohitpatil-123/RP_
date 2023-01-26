@@ -13,13 +13,15 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: transperent;
   color: white;
 `;
 const Cont = styled.div`
   width: 70%;
   margin: 30px;
   padding: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
   border: 2px solid #00b894;
   border-radius: 15px;
   &:hover {

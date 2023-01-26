@@ -21,6 +21,8 @@ const Minicont = styled.div`
   height: 600px;
   padding: 10px;
   border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
   &:hover {
     box-shadow: 0 0 20px 0 #999;
   }
