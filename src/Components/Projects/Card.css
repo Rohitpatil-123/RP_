@@ -1,0 +1,55 @@
+.box{
+max-width: 350px;
+padding:10px;
+border-radius: 5px;
+border :3px solid #00b894;
+margin:10px auto;
+background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(2px);
+color:aliceblue
+}
+.box:hover{
+    box-shadow: 0 0 20px 0 #999;
+    color:#00b894;
+}
+.box img{
+    max-width: 300px;
+    height:300px;
+    display: block;
+    object-fit:cover;
+    padding:5px;
+    box-shadow: 2px;
+}
+.box .heading,
+.box .text{
+    text-transform:uppercase;
+
+}
+h2,h4{
+    text-transform: uppercase;
+}
+p{
+    margin:10px;
+}
+.tata{
+    width:130px;
+    height:35px;
+    font-size: 16px;
+   background: transparent;
+    border-radius:10px;
+}
+@media(min-width:700px){
+    
+    .box{
+        max-width: 1100px;
+    }
+    .box img{
+        float:left;
+    }
+    .box .heading,
+    .box .text{
+    float: right;
+    width:70%;
+}
+    
+}

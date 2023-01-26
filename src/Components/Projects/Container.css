@@ -1,0 +1,16 @@
+.container{
+    width:100%;
+    
+}
+@media(min-width:700px){
+    .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        z-index:-1;
+    }
+}
+body{
+    background-color: black;
+}
