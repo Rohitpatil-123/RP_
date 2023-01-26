@@ -13,7 +13,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-
+  background-color: black;
   color: white;
 `;
 const Cont = styled.div`
@@ -21,8 +21,6 @@ const Cont = styled.div`
   margin: 30px;
   padding: 10px;
   border: 2px solid #00b894;
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(2px);
   border-radius: 15px;
   &:hover {
     box-shadow: 0 0 20px 0 #999;
@@ -65,7 +63,7 @@ export default function About() {
       <Cont>
         <Headd>
           <h3>
-            <span style={{ color: "#cbe8e2" }}>About Me</span>
+            <span style={{ color: "#00b894" }}>About Me</span>
           </h3>
         </Headd>
         <Infor>
@@ -82,7 +80,7 @@ export default function About() {
         </Infor>
         <Head>
           <h4>
-            <span style={{ color: "#cbe8e2" }}>
+            <span style={{ color: "#00b894" }}>
               Technologies I am familiar with
             </span>
           </h4>

@@ -20,13 +20,11 @@ margin: 35px;
     height:40px;
     margin-top:20px;
     padding-left: 10px;
-    background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(2px);
     padding-right: 10px;
     border:1px solid #777;
     border-radius:14px;
     outline: none;
-    color: aliceblue;
+
 }
 .textarea-field{
     height:150px;
@@ -37,7 +35,7 @@ margin: 35px;
     width:100px;
     margin-top:18px;
     height:50px;
-    background-color: transparent;
+    background-color:#000601;
     font-size:16px;
     color:white;
     font-weight: bold;  
@@ -52,7 +50,7 @@ margin: 35px;
 .ho{
     text-align: center;
     padding-top: 8px;
-    color:#e8efef;
+    color:#00b894;
 }
 .rot:hover{
     box-shadow: 0 0 20px 0 #999;

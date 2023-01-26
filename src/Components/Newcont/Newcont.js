@@ -20,8 +20,6 @@ const Minicont = styled.div`
   border: 2px solid #00b894;
   height: 600px;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(2px);
   border-radius: 20px;
   &:hover {
     box-shadow: 0 0 20px 0 #999;
@@ -50,15 +48,6 @@ const Info = styled.div`
   text-align: center;
   color: #00b894;
 `;
-const style = {
-  maxWidth: "30%",
-  height: "60px",
-  marginLeft: "10px",
-  "@media (max-width: 768px)": {
-    maxWidth: "10%",
-    height: "20px",
-  },
-};
 
 export default function Newcont() {
   function sendEmail(e) {
@@ -108,28 +97,44 @@ export default function Newcont() {
         <Info>
           Follow Me On :
           <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-            <img src={Insta} alt="logo" style={style} />
+            <img
+              src={Insta}
+              alt="logo"
+              style={{ maxWidth: "30%", height: "60px", marginLeft: "10px" }}
+            />
           </a>
           <a
             href=" https://github.com/Rohitpatil-123"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={Git} alt="logo" style={style} />
+            <img
+              src={Git}
+              alt="logo"
+              style={{ maxWidth: "30%", height: "60px", marginLeft: "10px" }}
+            />
           </a>
           <a
             href="https://twitter.com/05Rohitpatil"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={Twitt} alt="logo" style={style} />
+            <img
+              src={Twitt}
+              alt="logo"
+              style={{ maxWidth: "30%", height: "60px", marginLeft: "10px" }}
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/rohit-patil-98b920228/"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={Linked} alt="logo" style={style} />
+            <img
+              src={Linked}
+              alt="logo"
+              style={{ maxWidth: "30%", height: "60px", marginLeft: "10px" }}
+            />
           </a>
         </Info>
       </Minicont>

@@ -8,18 +8,18 @@ export default function Home() {
         <div className="header-content">
           <h3>
             My Name Is{" "}
-            <span style={{ color: "#cbe8e2" }}>Rohit sanjay patil</span>
+            <span style={{ color: "#00b894" }}>Rohit sanjay patil</span>
           </h3>
           <h2>
             I am <span className="change_content"></span>
           </h2>
           <p>
             I am a student at{" "}
-            <span style={{ color: "#cbe8e2" }}>
+            <span style={{ color: "#00b894" }}>
               M.H. Saboo siddiq collage of engineering
             </span>
             <br />
-            pursuing my bachlor's of engineering in Information Technology
+            pusuing my bachlor's of engineering in Information Technology
           </p>
           <Link to="/newcont">
             <button>Contact Me</button>
