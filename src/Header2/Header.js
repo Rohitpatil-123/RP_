@@ -1,11 +1,15 @@
 import React from "react";
 import "./Header.css";
 import { Outlet, Link } from "react-router-dom";
+import logorp from "../Components/images/logorp.png";
 export default function Header() {
   return (
     <>
       <nav>
-        <div className="logo">RP_WEB</div>
+        <div className="logo">
+          <img src={logorp} alt="" style={{ height: "60px", width: "70px" }} />
+          &nbsp; RP_WEB
+        </div>
         <input type="checkbox" id="click" />
         <label htmlFor="click" className="menu-btn">
           <i className="fas fa-bars"></i>

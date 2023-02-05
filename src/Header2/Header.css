@@ -1,7 +1,7 @@
 nav{
     height: 10vh;
-    background-color: rgba(255, 255, 255, .05);  
-    backdrop-filter: blur(5px);
+    background-color:#001829;  
+    /* backdrop-filter: blur(1px); */
     align-items: center;
     display:flex;
     position: relative;
@@ -32,7 +32,7 @@ nav ul li a{
 }
 nav ul li a:hover,
 nav ul li a.active{
-    border:1px solid#00b894;
+    text-decoration: none;
     transition: all 0.3s ease;
     color: #00b894;
 }
