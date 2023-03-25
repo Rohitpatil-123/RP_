@@ -1,6 +1,6 @@
 section{
     width:100%;
-    height:85vh;
+    /* height:85vh; */
     align-items: center;
     display: flex;
     justify-content: center;
@@ -16,17 +16,21 @@ body{
     animation: pan 6s infinite alternate linear;
     }
 .header-content{
-    height:50%;
-    width:50%;
-    padding: 5px;
+    height:80%;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    padding: 25px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     border: 1px solid #00b894;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, .05);  
     backdrop-filter: blur(5px);
+}
+.childdiv{
+  padding: 15px;
 }
 h2{
     color:rgb(116, 181, 237);
@@ -36,8 +40,18 @@ h2{
     color: aliceblue;
     border-radius: 6px;
     height: 40px;
-    border-color: rgb(35, 122, 237);
+    border-color: rgba(1, 48, 110, 0.786);
     cursor: pointer;
+}
+
+.hexagon{
+  width: 35%;
+  height: 89%;
+  background: #2595bedc;
+  object-fit: cover;
+  overflow: hidden;
+  clip-path: polygon(50% 0%, 100% 27%, 100% 76%, 50% 100%, 0 76%, 0 29%);
+ 
 }
 
 
@@ -72,8 +86,17 @@ h2{
        width:260px;
     }
     .header-content{
-        width: 90%;
-        height: 80%;
+       width: 90%;
+       padding: 10px;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .hexagon{
+      width:90%;
+
+    }
+    .childdiv{
+     padding: 0px;
     }
   }
   ::-webkit-scrollbar {
