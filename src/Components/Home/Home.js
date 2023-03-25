@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Outlet, Link } from "react-router-dom";
+import Resume from "../assets/resume-rohit-new1.pdf";
 
 export default function Home() {
   return (
@@ -23,10 +24,16 @@ export default function Home() {
             <br></br>
             Currently i am Working as a Web Developer Intern At Strugend
           </p>
-
-          <Link to="/newcont">
-            <button className="bui">Contact Me</button>
-          </Link>
+          <div style={{ display: "flex" }}>
+            <Link to="/newcont">
+              <button className="bui">Contact Me</button>
+            </Link>
+            <a href={Resume} download="Resume">
+              <button className="bui" style={{ marginLeft: "20px" }}>
+                Resume
+              </button>
+            </a>
+          </div>
           <Outlet />
         </div>
       </section>
