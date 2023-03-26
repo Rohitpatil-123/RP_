@@ -16,7 +16,7 @@ export default function Card(props) {
           <p>{props.textt}</p>
           <p>{props.text}</p>
           <p>{props.textr}</p>
-          <button>Know more</button>
+          <button className="bui">Know more</button>
         </div>
       </div>
     </>

@@ -47,7 +47,9 @@ h2{
 .hexagon{
   width: 35%;
   height: 89%;
-  background: #2595bedc;
+  background:linear-gradient(190deg ,#6bbcd9,#157699dc);
+  /* #2595bedc */
+  /* ,#6bbcd9,#157699dc */
   object-fit: cover;
   overflow: hidden;
   clip-path: polygon(50% 0%, 100% 27%, 100% 76%, 50% 100%, 0 76%, 0 29%);
