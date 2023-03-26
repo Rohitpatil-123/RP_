@@ -10,7 +10,7 @@ export default function Home() {
       <section>
         <div className="header-content">
           <div className="hexagon">
-            <img src={Image} alt="photo" width="100%" />
+            <img src={Image} alt="p" width="100%" />
           </div>
 
           <div className="childdiv">
