@@ -16,8 +16,8 @@ color:aliceblue
     max-width: 300px;
     height:300px;
     display: block;
-    object-fit:cover;
-    padding:5px;
+    object-fit:contain;
+    padding:2px;
     box-shadow: 2px;
 }
 .box .heading,

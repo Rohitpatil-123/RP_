@@ -6,11 +6,12 @@ import Git from "../images/github.png";
 import Twitt from "../images/twitter.png";
 import Linked from "../images/linked.png";
 //import { Outlet, Link } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const Container = styled.div`
   width: 100%;
   display: flex;
-  padding: 25px;
+  padding: 15px;
   justify-content: center;
   @media (max-width: 768px) {
   }
@@ -19,7 +20,7 @@ const Minicont = styled.div`
   width: 50%;
   border: 2px solid #00b894;
   height: 600px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(5px);
@@ -33,7 +34,6 @@ const Minicont = styled.div`
 const Head = styled.div`
   width: 100%;
   height: 65px;
-
   color: #00b894;
   font-size: 40px;
   font-weight: 600;
@@ -41,7 +41,6 @@ const Head = styled.div`
 `;
 const For = styled.div`
   width: 100%;
-
   margin-top: 5px;
 `;
 const Info = styled.div`
@@ -62,7 +61,7 @@ export default function Newcont() {
         "ZTrJhdKiGfDbcWtul"
       )
       .then((res) => {
-        console.log(res);
+        toast.success("thank you for contacting me !!!");
       })
       .catch((err) => {
         console.log(err);

@@ -48,8 +48,9 @@ export default function Home() {
               pursuing my bachlor's of engineering in Information Technology
               <br />I Love Problem Solving i have solved 200+ problems on
               leetcode
-              <br></br>
-              Currently i am Working as a Web Developer Intern At Strugend
+              <br></br>I have Worked as a Web Developer Intern At Strugend and{" "}
+              <br />
+              Java developer intern At laqshya infotech solution
             </p>
             <div style={{ display: "flex", marginLeft: "5px" }}>
               <Link to="/newcont">

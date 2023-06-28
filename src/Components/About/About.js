@@ -49,8 +49,6 @@ const Head = styled.div`
 `;
 const Infor = styled.div`
   width: 100%;
-
-  text-align: center;
   font-size: 20px;
 `;
 const Headd = styled.div`
@@ -70,15 +68,48 @@ export default function About() {
         </Headd>
         <Infor>
           My name is &nbsp;
-          <span style={{ color: "#00b894" }}>ROHIT SANJAY PATIL </span> i am in
-          my third year pursuing my bachlor's degree in information technology.
-          <br />i had done a&nbsp;
-          <span style={{ color: "#00b894" }}>
-            internship in laqshya infosoft solution Borivali(w)
-          </span>
-          &nbsp; during internship i have devloped some javaFX applications
-          which i mentioned in projects section. I am always exited and
-          intrested to learn new technologies.
+          <span
+            style={{
+              color: "#00b894",
+              textAlign: "center",
+              alignItems: "center",
+              fontWeight: "bold",
+            }}
+          >
+            ROHIT SANJAY PATIL{" "}
+          </span>{" "}
+          i am in my Final year pursuing my bachlor's degree in Information
+          Technology.
+          {/* <br />i had done a&nbsp; */}
+          <hr style={{ color: "red", backgroundColor: "#00b894" }} />
+          <ul>
+            <li>
+              <span style={{ color: "#00b894", fontWeight: "bold" }}>
+                Internship in 2021-22 oct-mar from laqshya infosoft solution
+                Borivali(w)
+              </span>
+              <br /> during internship i have devloped some javaFX applications
+              which i mentioned in projects section. I am always exited and
+              intrested to learn new technologies.&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://drive.google.com/file/d/1QjEhtiLYej09SXJnU2tWuQevqI46ZQ57/view">
+                {" "}
+                <button className="bui">completion letter</button>
+              </a>
+            </li>
+            <br />
+            <li>
+              <span style={{ color: "#00b894", fontWeight: "bold" }}>
+                Internship in 2022-23 dec-mar from Strugend as Web Developer
+              </span>
+              <br /> during internship i have worked on frontend technology and
+              explored frontend frame work like material ui. I am always exited
+              and intrested to learn new technologies.&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://drive.google.com/file/d/1Qt-j87z1m_ejGN_lO08I6dbxmXBt4SIL/view?pli=1">
+                {" "}
+                <button className="bui">completion letter</button>
+              </a>
+            </li>
+          </ul>
         </Infor>
         <Head>
           <h4>

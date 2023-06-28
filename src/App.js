@@ -6,6 +6,7 @@ import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
 import Container from "./Components/Projects/Container";
 import Newcont from "./Components/Newcont/Newcont";
+import { Toaster } from "react-hot-toast";
 
 import Header from "./Header2/Header";
 
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/newcont" element={<Newcont />}></Route>
       </Routes>
       <Footer />
+      <Toaster />
     </Routers>
   );
 }

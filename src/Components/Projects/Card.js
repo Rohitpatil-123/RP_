@@ -14,9 +14,11 @@ export default function Card(props) {
         <div className="text">
           <p>{props.text}</p>
           <p>{props.textt}</p>
-          <p>{props.text}</p>
+          <p>{props.texta}</p>
           <p>{props.textr}</p>
-          <button className="bui">Know more</button>
+          <a href={props.url}>
+            <button className="bui">Know more</button>
+          </a>
         </div>
       </div>
     </>
