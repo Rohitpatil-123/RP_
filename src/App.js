@@ -7,6 +7,7 @@ import Home from "./Components/Home/Home";
 import Container from "./Components/Projects/Container";
 import Newcont from "./Components/Newcont/Newcont";
 import { Toaster } from "react-hot-toast";
+import "../src/Components/Projects/Container.css";
 
 import Header from "./Header2/Header";
 
@@ -14,6 +15,7 @@ export default function App() {
   return (
     <Routers>
       <Header />
+
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>

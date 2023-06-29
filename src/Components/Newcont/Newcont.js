@@ -7,12 +7,14 @@ import Twitt from "../images/twitter.png";
 import Linked from "../images/linked.png";
 //import { Outlet, Link } from "react-router-dom";
 import toast from "react-hot-toast";
+import { motion } from "framer-motion";
 
 const Container = styled.div`
   width: 100%;
   display: flex;
   padding: 15px;
   justify-content: center;
+  margin-top: 100px;
   @media (max-width: 768px) {
   }
 `;
@@ -68,77 +70,88 @@ export default function Newcont() {
       });
   }
   return (
-    <Container>
-      <Minicont>
-        <Head>Contact Me</Head>
-        <For>
-          <form onSubmit={sendEmail}>
-            <input
-              type="text"
-              className="input-field"
-              name="name"
-              placeholder="  Enter the name here"
-            />
+    <motion.div
+      style={{ paddingTop: "1px" }}
+      initial={{ y: "-100vh", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.9, type: "spring" }}
+    >
+      <Container>
+        <Minicont>
+          <Head>Contact Me</Head>
+          <For>
+            <form onSubmit={sendEmail}>
+              <input
+                type="text"
+                className="input-field"
+                name="name"
+                placeholder="  Enter the name here"
+              />
 
-            <input
-              type="email"
-              className="input-field"
-              name="user_mail"
-              placeholder=" Enter the Email here"
-            />
+              <input
+                type="email"
+                className="input-field"
+                name="user_mail"
+                placeholder=" Enter the Email here"
+              />
 
-            <textarea
-              name="message"
-              className="input-field textarea-field"
-              placeholder=" Enter the Message here"
-            />
-            <input type="submit" className="btn" value="send" />
-          </form>
-        </For>
-        <Info>
-          Follow Me On :
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-            <img
-              src={Insta}
-              alt="logo"
-              style={{ maxWidth: "30%", height: "60px", marginLeft: "10px" }}
-            />
-          </a>
-          <a
-            href=" https://github.com/Rohitpatil-123"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={Git}
-              alt="logo"
-              style={{ maxWidth: "30%", height: "60px", marginLeft: "10px" }}
-            />
-          </a>
-          <a
-            href="https://twitter.com/05Rohitpatil"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={Twitt}
-              alt="logo"
-              style={{ maxWidth: "30%", height: "60px", marginLeft: "10px" }}
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/rohit-patil-98b920228/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={Linked}
-              alt="logo"
-              style={{ maxWidth: "30%", height: "60px", marginLeft: "10px" }}
-            />
-          </a>
-        </Info>
-      </Minicont>
-    </Container>
+              <textarea
+                name="message"
+                className="input-field textarea-field"
+                placeholder=" Enter the Message here"
+              />
+              <input type="submit" className="btn" value="send" />
+            </form>
+          </For>
+          <Info>
+            Follow Me On :
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={Insta}
+                alt="logo"
+                style={{ maxWidth: "30%", height: "60px", marginLeft: "10px" }}
+              />
+            </a>
+            <a
+              href=" https://github.com/Rohitpatil-123"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={Git}
+                alt="logo"
+                style={{ maxWidth: "30%", height: "60px", marginLeft: "10px" }}
+              />
+            </a>
+            <a
+              href="https://twitter.com/05Rohitpatil"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={Twitt}
+                alt="logo"
+                style={{ maxWidth: "30%", height: "60px", marginLeft: "10px" }}
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rohit-patil-98b920228/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={Linked}
+                alt="logo"
+                style={{ maxWidth: "30%", height: "60px", marginLeft: "10px" }}
+              />
+            </a>
+          </Info>
+        </Minicont>
+      </Container>
+    </motion.div>
   );
 }

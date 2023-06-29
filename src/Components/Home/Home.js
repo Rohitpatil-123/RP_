@@ -9,6 +9,7 @@ import Git from "../images/github.png";
 import Twitt from "../images/twitter.png";
 import Linked from "../images/linked.png";
 import Leetcode from "../assets/LeetCode.png";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const Info = styled.div`
@@ -22,7 +23,11 @@ export default function Home() {
   `;
   return (
     <>
-      <section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <div className="header-content">
           <div className="hexagon">
             <img src={Image} alt="p" width="100%" style={{ padding: "5px" }} />
@@ -138,7 +143,7 @@ export default function Home() {
             <Outlet />
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

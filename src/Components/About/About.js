@@ -9,21 +9,16 @@ import Mysq from "../images/mysq.png";
 import Javat from "../images/javat.png";
 import Reacth from "../images/reacto.png";
 //import Python from "../images/python.png";
-const Container = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: transperent;
-  color: white;
-`;
+import { motion } from "framer-motion";
 const Cont = styled.div`
   width: 70%;
-  margin: 30px;
+  margin: 20px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(5px);
   border: 2px solid #00b894;
   border-radius: 15px;
+  margin-top: 90px;
   &:hover {
     box-shadow: 0 0 20px 0 #999;
   }
@@ -59,7 +54,18 @@ const Headd = styled.div`
 
 export default function About() {
   return (
-    <Container>
+    <motion.div
+      style={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        backgroundColor: "transparent",
+        color: "white",
+      }}
+      initial={{ y: "-100vh", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.9, type: "spring" }}
+    >
       <Cont>
         <Headd>
           <h3>
@@ -161,6 +167,6 @@ export default function About() {
           />
         </Contro>
       </Cont>
-    </Container>
+    </motion.div>
   );
 }

@@ -1,7 +1,13 @@
-.container{
-    width:100%;
-    
-}
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    /* z-index: 1; */
+    background: var(--blue);
+    transform-origin: 0%;
+  }
 @media(min-width:700px){
     .container{
         display: flex;
@@ -9,6 +15,7 @@
         align-items: center;
         flex-wrap: wrap;
         z-index:-1;
+        
     }
 }
 body{

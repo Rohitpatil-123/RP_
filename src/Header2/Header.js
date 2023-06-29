@@ -2,10 +2,15 @@ import React from "react";
 import "./Header.css";
 import { Outlet, Link } from "react-router-dom";
 import logorp from "../Components/images/logorp.png";
+import { motion } from "framer-motion";
 export default function Header() {
   return (
     <>
-      <nav>
+      <motion.nav
+        initial={{ y: -250 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5, type: "spring", stiffness: 120 }}
+      >
         <div className="logo">
           <img src={logorp} alt="" style={{ height: "60px", width: "70px" }} />
           &nbsp; RP_WEB
@@ -16,7 +21,7 @@ export default function Header() {
         </label>
         <ul>
           <li>
-            <Link to="/">home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
@@ -30,7 +35,7 @@ export default function Header() {
           </li>
           <Outlet />
         </ul>
-      </nav>
+      </motion.nav>
     </>
   );
 }
