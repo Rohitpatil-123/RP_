@@ -69,12 +69,12 @@ export default function About() {
     >
       <Cont>
         <Headd>
-          <h3>
-            <span style={{ color: "#00b894" }}>About Me</span>
-          </h3>
+          <div style={{ fontSize: "35px", letterSpacing: "1px" }}>
+            <span style={{ color: "#6bbcd9" }}>Word Experience</span>
+          </div>
         </Headd>
         <Infor>
-          My name is &nbsp;
+          {/* My name is &nbsp;
           <span
             style={{
               color: "#00b894",
@@ -86,9 +86,9 @@ export default function About() {
             ROHIT SANJAY PATIL{" "}
           </span>{" "}
           i am in my Final year pursuing my bachlor's degree in Information
-          Technology.
+          Technology. */}
           {/* <br />i had done a&nbsp; */}
-          <hr style={{ color: "red", backgroundColor: "#00b894" }} />
+          <hr style={{ color: "red", backgroundColor: "#6bbcd9" }} />
           <ul>
             <li>
               <span style={{ color: "#00b894", fontWeight: "bold" }}>
@@ -120,7 +120,7 @@ export default function About() {
         </Infor>
         <Head>
           <h4>
-            <span style={{ color: "#00b894" }}>
+            <span style={{ color: "#6bbcd9" }}>
               Technologies I am familiar with
             </span>
           </h4>
