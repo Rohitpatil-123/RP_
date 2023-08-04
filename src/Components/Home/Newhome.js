@@ -1,9 +1,8 @@
 import React from "react";
-import "./Home.css";
+import "./Newhome.css";
+import Image from "../assets/myphoto-new.png";
 import { Outlet, Link } from "react-router-dom";
 import Resume from "../assets/resume-rohit-new1.pdf";
-import Image from "../assets/myphoto-new.png";
-import styled from "styled-components";
 import Insta from "../images/insta.png";
 import Git from "../images/github.png";
 import Twitt from "../images/twitter.png";
@@ -11,50 +10,68 @@ import Linked from "../images/linked.png";
 import Leetcode from "../assets/LeetCode.png";
 import { motion } from "framer-motion";
 
-export default function Home() {
-  const Info = styled.div`
-    width: 100%;
-    font-size: 10px;
-    text-align: center;
-    color: #00b894;
-    display: flex;
-    justify-content: flex-start;
-    padding: 15px 0px 0px 0px;
-  `;
+const Newhome = () => {
   return (
-    <>
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <div className="header-content">
-          <div className="childdiv">
-            <h2 style={{ textAlign: "center" }}>
-              👋 Hey there! I'm
-              <span style={{ color: "#aff3e5" }}>&nbsp;Rohit sanjay patil</span>
-            </h2>
-            <h2 style={{ textAlign: "center" }}>
+    <motion.div
+      className="maindiv"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <div className="parent">
+        <div className="content">
+          <div className="heading">
+            👋 Hey there! I'm{" "}
+            <span style={{ color: "#00b894" }}> Rohit Sanjay Patil</span>
+            <div className="heading" style={{ textAlign: "center" }}>
               I am <span class="change_content"> </span>
-            </h2>
-            <p
+            </div>
+          </div>
+
+          <div className="information">
+            <ul style={{ listStyleType: "square" }}>
+              <li>
+                🎓 Pursuing a Bachelor's degree in Information Technology, I'm
+                driven by a curiosity to explore the limitless possibilities of
+                the digital realm. My academic pursuits have equipped me with a
+                strong foundation in IT concepts and technologies.
+              </li>
+              <li>
+                💡 I love Problem solving and have solved 250+ problems on
+                leetcode. I thrive on dissecting challenges and engineering
+                effective solutions.
+              </li>
+              <li>
+                🌐 During my exciting journey, I've embarked on internships that
+                have honed my skills and expanded my horizons. As a Web
+                Developer Intern at Strugend, I delved into the art of crafting
+                immersive online experiences. Additionally, my stint as a Java
+                Developer Intern at Laqshya Infotech Solutions allowed me to
+                dive into the world of backend magic, bringing functionality and
+                efficiency to life.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="meta-content">
+          <div className="photo-holder">
+            <div className="hex">
+              <img
+                src={Image}
+                alt="cjdjc"
+                style={{ objectFit: "contain", width: "100%", height: "100%" }}
+              />
+            </div>
+          </div>
+          <div className="text-holder">
+            <div
               style={{
-                color: "#aff3e5",
-                width: "fit-content",
-                fontSize: "20px",
+                display: "flex",
+                justifyContent: "center",
+                marginLeft: "5px",
+                marginTop: "15px",
               }}
             >
-              a passionate and dedicated Information Technology student at M.H.
-              Saboo Siddik College of Engineering
-              <br />
-              pursuing my bachlor's of engineering in Information Technology
-              <br />I Love Problem Solving i have solved 200+ problems on
-              leetcode
-              <br></br>I have Worked as a Web Developer Intern At Strugend and{" "}
-              <br />
-              Java developer intern At laqshya infotech solution
-            </p>
-            <div style={{ display: "flex", marginLeft: "5px" }}>
               <Link to="/newcont">
                 <button className="bui">Contact Me</button>
               </Link>
@@ -64,7 +81,7 @@ export default function Home() {
                 </button>
               </a>
             </div>
-            <Info>
+            <div className="inf">
               <a
                 href=" https://github.com/Rohitpatil-123"
                 target="_blank"
@@ -75,7 +92,7 @@ export default function Home() {
                   alt="logo"
                   style={{
                     // maxWidth: "30%",
-                    height: "40px",
+                    height: "50px",
                   }}
                 />
               </a>
@@ -90,7 +107,7 @@ export default function Home() {
                   alt="logo"
                   style={{
                     // maxWidth: "30%",
-                    height: "40px",
+                    height: "50px",
                   }}
                 />
               </a>
@@ -104,7 +121,7 @@ export default function Home() {
                   alt="logo"
                   style={{
                     // maxWidth: "30%",
-                    height: "40px",
+                    height: "50px",
                   }}
                 />
               </a>
@@ -118,7 +135,7 @@ export default function Home() {
                   alt="logo"
                   style={{
                     // maxWidth: "30%",
-                    height: "40px",
+                    height: "50px",
                   }}
                 />
               </a>
@@ -132,19 +149,17 @@ export default function Home() {
                   alt="logo"
                   style={{
                     // maxWidth: "30%",
-                    height: "40px",
+                    height: "50px",
                   }}
                 />
               </a>
-            </Info>
+            </div>
             <Outlet />
           </div>
-
-          <div className="hexagon">
-            <img src={Image} alt="p" width="100%" style={{ padding: "1px" }} />
-          </div>
         </div>
-      </motion.section>
-    </>
+      </div>
+    </motion.div>
   );
-}
+};
+
+export default Newhome;

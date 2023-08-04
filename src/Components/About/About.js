@@ -14,9 +14,10 @@ const Cont = styled.div`
   width: 70%;
   margin: 20px;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(5px);
-  border: 2px solid #00b894;
+  border-top: 1px solid #6bbcd9;
+  border-bottom: 1px solid #6bbcd9;
   border-radius: 15px;
   margin-top: 90px;
   &:hover {

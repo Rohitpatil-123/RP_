@@ -10,6 +10,7 @@ import { Toaster } from "react-hot-toast";
 import "../src/Components/Projects/Container.css";
 
 import Header from "./Header2/Header";
+import Newhome from "./Components/Home/Newhome.js";
 
 export default function App() {
   return (
@@ -17,11 +18,12 @@ export default function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<Newhome />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/projects" element={<Container />}></Route>
         <Route path="/newcont" element={<Newcont />}></Route>
+        <Route path="/demo" element={<Newhome />}></Route>
       </Routes>
       <Footer />
       <Toaster />
